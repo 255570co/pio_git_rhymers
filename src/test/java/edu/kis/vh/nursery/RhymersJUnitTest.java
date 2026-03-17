@@ -18,12 +18,12 @@ public class RhymersJUnitTest {
     @Test
     public void testCallCheck() {
         DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
-        boolean result = rhymer.callCheck();
+        boolean result = rhymer.checkCall();
         Assert.assertEquals(true, result);
 
         rhymer.countIn(888);
 
-        result = rhymer.callCheck();
+        result = rhymer.checkCall();
         Assert.assertEquals(false, result);
     }
 
