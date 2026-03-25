@@ -6,7 +6,6 @@ public class IntLinkedList {
     private Node last;
     private int i;
 
-
     public void push(int i) {
         if (last == null)
             last = new Node(i);
@@ -40,4 +39,30 @@ public class IntLinkedList {
         return ret;
     }
 
+}
+
+class Node { // Klasa przeniesiona tutaj i pozbawiona modyfikatora public
+
+    public final int value;
+    private Node prev, next;
+
+    public Node(int i) {
+        value = i;
+    }
+
+    public Node getPrev() {
+        return prev;
+    }
+
+    public void setPrev(Node prev) {
+        this.prev = prev;
+    }
+
+    public Node getNext() {
+        return next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
+    }
 }
