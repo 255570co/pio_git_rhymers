@@ -2,6 +2,7 @@ package edu.kis.vh.nursery;
 
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
+    // TODO: wymaga refaktoryzacji - użycie dwóch stosów do symulacji kolejki jest niezbyt efektywne (złożoność O(n))
     private final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
     @Override

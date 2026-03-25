@@ -6,6 +6,8 @@ import edu.kis.vh.nursery.HanoiRhymer;
 
 public class DefaultRhymersFactory implements Rhymersfactory {
 
+    // TODO: nazwy metod w fabryce powinny zaczynać się od małej litery zgodnie z konwencją języka Java (https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html)
+
     @Override
     public DefaultCountingOutRhymer GetStandardRhymer() {
         return new DefaultCountingOutRhymer();
